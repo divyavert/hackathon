@@ -7,6 +7,19 @@ const toggleNavbar = () => {
 };
 
 mobile_nav.addEventListener("click", () => toggleNavbar());
+
+var c = false;
+if(c == true){
+    document.getElementById("notsafe").style.display = "none";
+    document.getElementById("safe").style.color = "green";
+
+}else{
+    document.getElementById("safe").style.display = "none";
+    document.getElementById("notsafe").style.color = "red";
+}
+
+
+mobile_nav.addEventListener("click", () => toggleNavbar());
 function geoFindMe() {
 
     const status = document.querySelector('#status');

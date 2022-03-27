@@ -15,6 +15,24 @@ body {
     overflow: hidden;
 }
 
+.btn {
+    position: relative;
+    top: 1rem;
+    right: -3.5rem;
+    z-index: 0;
+    background: #2B85D1 none repeat scroll 0 0;
+    border-color: #2B85D1;
+    color: #ffffff;
+    font-size: 14px;
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 10px;
+
+
+}
+
 .center {
     position: absolute;
     top: 50%;

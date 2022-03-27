@@ -18,8 +18,8 @@
       <nav class="navbar">
         <ul class="navbar-list">
           <li><a class="navbar-link" href="./home.html">Home</a></li>
-          <li><a class="navbar-link" href="./login.html">login</a></li>
-          <li><a class="navbar-link" href="./contact.html">contact us</a></li>
+          <li><a class="navbar-link" href="./about.html">about us</a></li>
+          <li><a class="navbar-link" href="./home.html">log out</a></li>
         
         
         </ul>
@@ -36,8 +36,9 @@
         <div class="hero">
           <p class="intro">Scan here for any covid infected near me</p>
         </div>
-        <button  onclick="getLocation()" type="submit" class="btn btn-primay">Scan</button>
- 
+     <a class="bt" href="./scan3.html"> <button href="./scan3.html"  onclick="getLocation()" type="submit" class="btn btn-primay " id="find-me">GO</button>
+     </a>    <p id = "status"></p>
+        <a id = "map-link" target="_blank"></a>
       </section>
     </main>
 
@@ -54,6 +55,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="./JS/demo.js"></script>
+    <script src="JS/main.js"></script>
   </body>
 </html>

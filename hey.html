@@ -1,13 +1,12 @@
-const mobile_nav = document.querySelector(".mobile-navbar-btn");
-const nav_header = document.querySelector(".header");
+<button id = "find-me">Scan</button><br/>
+<p id = "status"></p>
+<a id = "map-link" target="_blank"></a>
 
-const toggleNavbar = () => {
-  // alert("Plz Subscribe ");
-  nav_header.classList.toggle("active");
-};
+<script>
+    
+    // const lat1 = 
 
-mobile_nav.addEventListener("click", () => toggleNavbar());
-function geoFindMe() {
+    function geoFindMe() {
 
     const status = document.querySelector('#status');
     const mapLink = document.querySelector('#map-link');
@@ -35,3 +34,4 @@ function geoFindMe() {
     }
     }
     document.querySelector('#find-me').addEventListener('click', geoFindMe);
+</script>

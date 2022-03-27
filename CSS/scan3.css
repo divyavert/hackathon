@@ -8,6 +8,10 @@
 
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 html {
     font-size: 62.5%;
     /* 1rem = 10px */
@@ -100,20 +104,23 @@ body {
     display: none;
 }
 
-
 /* ===========================================
 Hero and Service Section Start
 ======================================= */
 .section-hero,
 .section-services {
     padding: 9.6rem 0;
-    background-color: #a5d8ff;
+
     height: 60vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+. .section-hero {
+    text-align: center;
 }
 
 .section-services {
@@ -126,6 +133,11 @@ Hero and Service Section Start
     font-size: 3.2rem;
 }
 
+#map {
+    width: 100%;
+    height: 30vh;
+}
+
 #status {
     display: none;
 }
@@ -133,7 +145,6 @@ Hero and Service Section Start
 #map-link {
     display: none;
 }
-
 
 /* ===========================================
 Responsive Codes 
@@ -149,67 +160,84 @@ Responsive Codes
     }
 
     .header {
-        position: relative;
+        padding: 0 4.8rem;
+        height: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e7f5ff;
     }
 
     .header .logo {
-        width: 40%;
+        height: 3rem;
     }
 
     .navbar {
-        /* display: none; */
-        width: 100%;
-        height: 100vh;
-        background: #e7f5ff;
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        /* to get the tranisition  */
-        transform: translateX(0%);
-        transition: all 0.5s linear;
-
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
+        z-index: 99;
     }
 
     .navbar-list {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        gap: 4.8rem;
+        list-style: none;
     }
 
-    .active .navbar {
-        transform: translateX(0);
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+    .navbar-link:link,
+    .navbar-link:visited {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #212529;
+        transition: all 0.3s;
     }
 
-    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
-        display: block;
+    .navbar-link:hover,
+    .navbar-link:active {
+        color: #364fc7;
     }
 
-    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+    .mobile-navbar-btn {
+        display: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .mobile-nav-icon {
+        width: 4rem;
+        height: 4rem;
+        color: #212529;
+    }
+
+    .mobile-nav-icon[name="close-outline"] {
+        display: none;
+    }
+
+    #status {
         display: none;
     }
 
     .btn {
-        position: relative;
-        left: 0.1rem;
+        margin: 1rem;
         width: 10rem;
+        position: relative;
+
+        left: -11.999rem;
+
+
     }
 
-    .bt {
+    h1 {
         position: relative;
-        left: -14rem;
-        width: 15rem;
+        left: 6rem;
+    }
+
+    #map-link {
+        display: none;
     }
 }
+
 
 /* Below 560px  */
 @media (max-width: 35em) {
@@ -219,12 +247,6 @@ Responsive Codes
 
     .header .logo {
         width: 60%;
-    }
-
-    .bt {
-        position: relative;
-        left: -14rem;
-        width: 15rem;
     }
 }
 
@@ -236,10 +258,14 @@ iframe {
 }
 
 @media only screen and (min-width: 992px) {
-    .bt {
+    .btn {
         position: relative;
-        left: -14rem;
-        width: 15rem;
+        left: -17.4rem;
+        margin: 1rem;
+        width: 10rem;
     }
 
+    #map-link {
+        display: none;
+    }
 }
